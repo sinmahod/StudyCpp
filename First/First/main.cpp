@@ -93,6 +93,7 @@ int main()
     }
     
     copy(s,s + 5,x);
+    //第三个参数cout是输出流
     copy(s,s + 5,ostream_iterator<int>(cout," "));
     cout << endl;
 }

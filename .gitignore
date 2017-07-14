@@ -1,2 +1,7 @@
+# Windows
 *.exe
 *.exe~
+
+# Mac-xcode
+First.xcodeproj
+*.DS_Store
