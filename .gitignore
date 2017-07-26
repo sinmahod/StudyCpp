@@ -4,4 +4,8 @@
 
 # Mac-xcode
 First.xcodeproj
-*.DS_Store
+xcuserdata
+.DS_Store
+
+
+*.swp 
