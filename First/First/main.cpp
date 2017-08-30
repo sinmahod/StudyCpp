@@ -10,6 +10,7 @@
 #include <iostream>
 #include <algorithm>
 #include <iterator>
+#include <ctime>
 
 //作用域如果不加下面的cout需要使用std::cout与std::endl
 using namespace std;
@@ -83,19 +84,27 @@ int main()
     
     // cout << x << endl;
     
-    int s[] = {1,2,3,4,5},x[5];
+//    int s[] = {1,2,3,4,5},x[5];
+//    
+//    reverse(s,s + 5);
+//
+//    
+//    for ( int i = 0 ; i < getArrayLen(s) ; i++ ){
+//        cout << s[i] << endl;
+//    }
+//    
+//    copy(s,s + 5,x);
+//    //第三个参数cout是输出流
+//    copy(s,s + 5,ostream_iterator<int>(cout," "));
+//    cout << endl;
     
-    reverse(s,s + 5);
-
+    time_t now = time(0);
+    tm *lt = localtime(&now);
     
-    for ( int i = 0 ; i < getArrayLen(s) ; i++ ){
-        cout << s[i] << endl;
-    }
+    cout <<  lt->tm_min << endl;
     
-    copy(s,s + 5,x);
-    //第三个参数cout是输出流
-    copy(s,s + 5,ostream_iterator<int>(cout," "));
-    cout << endl;
+    
+    cerr << "Error message : " << "asd" << endl;
 }
 
 void result(int i){
